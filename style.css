@@ -7,3 +7,34 @@
 .btn{
     border: 1px solid black;
 }
+.header{
+    width: 100%;
+    background-color: #032d4a;
+
+}
+.header img{
+    width: 50px;
+    margin: 5px 30px;
+    position: absolute;
+}
+.item{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.item a{
+    line-height: 60px;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
+@media (max-width:768px){
+    .item{
+        width: 49%;
+    }
+}
+@media (max-width:576px){
+    .item{
+        width: 100%;
+    }
+}
