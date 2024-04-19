@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vnua Liên hệ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        form{
+            width: 500px;
+        
+        }
+        .input{
+            background-color: #ededed;
+            /* color: red; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h2 align="center">Liên hệ</h2>
+            <div class="form-group">
+                <label for="">Họ tên</label>
+                <input type="text" class="form-control txt input" id="fullname" placeholder="Họ tên" name="name" >
+              </div>
+              <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="form-control txt input" id="email" placeholder="Email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="">Số điện thoại</label>
+                <input type="text" class="form-control txt input" id="phone" placeholder="Số điện thoại" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="">Nội dung</label>
+                <br>
+                <textarea name="" id="nd" cols="68" rows="5" class="input"></textarea>
+              </div>
+              <input type="submit" class="btn btn-primary">
+              <input type="reset" class="btn btn-danger">
+        </form>
+    </div>
+    <script>
+        fullName=document.getElementById('fullname');
+        email=document.getElementById('email');
+        phone=document.getElementById('phone');
+        nd=document.getElementById('nd');
+
+        fullName.addEventListener('click', checkNameClick);
+        email.addEventListener('click', checkEmailClick);
+        phone.addEventListener('click', checkPhoneClick);
+        nd.addEventListener('click', checkNDClick);
+
+        function checkNameClick(){
+            if(fullName.value.length<=0){
+                fullName.style.border="1px solid red";
+
+        }
+            else fullName.style.border="1px solid black";
+        };
+        function checkEmailClick(){
+            if(email.value.length<=0){
+                email.style.border="1px solid red";
+
+        }
+        else email.style.border="1px solid black";
+        };
+        function checkPhoneClick(){
+            if(phone.value.length<=0){
+                phone.style.border="1px solid red";
+            
+
+        }
+        else phone.style.border="1px solid black";
+        };
+        function checkNDClick(){
+            if(nd.value.length<2){
+                nd.style.border="1px solid red";
+
+        }
+        else nd.style.border="1px solid black";
+
+        }
+
+
+    </script>
+</body>
+</html>

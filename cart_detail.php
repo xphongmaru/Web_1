@@ -1,5 +1,20 @@
 <?php
     session_start();
+    $severname="localhost";
+    $username="root";
+    $password="";
+    $dbname="Phong";
+
+    $conn=new mysqli($severname, $username, $password,$dbname);
+
+    $query="select * from products";
+
+    $result=$conn->query($query);
+
+    $product=array();
+
+    while($row=$result->fetch_assoc())
+        $product[]=$row;
 
 ?>
 <!DOCTYPE html>
