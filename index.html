@@ -3,154 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog cá nhân</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <title>Trang chủ </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+
 </head>
 <body>
-    <!-- <div class="container"> -->
-        <header class="header">
-            <img src="https://i.pinimg.com/originals/b8/88/2d/b8882dd5f9ec52553c4ea84f8730860e.png" alt="" >
-            <div class="item"><a href="#infor">MyInfo</a></div>
-            <div class="item"><a href="#qtht">MyClass</a></div>
-            <div class="item"><a href="#st">MyProfile</a></div>
-        </header>
+    <div class="container-fluid">
+        <!--header -->
+        <section class="header row">
+            <div class="col-md-1"></div>
 
-        <h1 align="center">Đây là trang blog cá nhân</h1>
-        <h2>Mục lục</h2>
-        <ol>
-            <li><a href="#infor">Thông tin cá nhân</a></li>
-            <li><a href="#qtht">Quá trình học tập</a></li>
-            <li><a href="#st">Sở thích</a></li>
-        </ol>
-    
-        <ol>
-            <li> 
-                <h2 id="infor" style="background-color: beige;">Thông tin cá nhân</h2>
-                <ul>  
-                    <img src="https://i.pinimg.com/474x/f5/95/eb/f595ebfa9c5bb2083839f59465263893.jpg" alt="Phong" width="200px">
-                    <li>Họ tên: Phạm Xuân Phong</li>
-                    <li>MaSV: 671762</li>
-                    <li>Ngày sinh: 13/09/2004</li>
-                </ul>
-               
-            </li>
-            <li>
-                <h2 id="qtht" style="background-color: beige;">Thông tin quá trình học tập</h2>
-                <ul>
-                    <img src="https://i.pinimg.com/originals/b8/88/2d/b8882dd5f9ec52553c4ea84f8730860e.png" alt="" width="80px">
-                    <li>Tôi học tại Học viện Nông nghiệp Việt Nam</li>
-                    <li>Khoa: Công nghệ thông tin</li>
-                    <li>Ngành: Công nghệ phần mềm</li>
-                    <li>Lớp: K67CNPMA</li>
-                </ul>
-            </li>
-            <li>
-                <h2 id="st" style="background-color: beige;">Sở thích</h2>
-                <ul>
-                    <li>Đá bóng</li>
-                    <li>Xem phim</li>
-                    <li>Chơi game</li>
-                </ul>
-            </li>
-        </ol>
-        <div class="table-responsive">
-            <table border="1px" width=1000px style="border-spacing:0px" id="tb" >
-                <thead>
-                    <tr>
-                        <th rowspan="2">STT</th>
-                        <th rowspan="2">Môn</th>
-                        <th colspan="3">Điểm thi</th>
-                        <th rowspan="2">Thông tin môn</th>
-                    </tr>
-                    <tr>
-                        <th>Lần 1</th>
-                        <th>Lần 2</th>
-                        <th>Lần 3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Tin học cơ sơ</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td><a href="https://fita.vnua.edu.vn/bo-mon/bm-cong-nghe-phan-mem/cac-mon-giang-day/">Tin học cơ sơ</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Kỹ thuật lập trình</td>
-                        <td>9</td>
-                        <td>9</td>
-                        <td>9</td>
-                        <td><a href="https://fita.vnua.edu.vn/bo-mon/bm-cong-nghe-phan-mem/cac-mon-giang-day/">Kỹ thuật lập trình</a></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Tin học cơ sơ</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td><a href="https://fita.vnua.edu.vn/bo-mon/bm-cong-nghe-phan-mem/cac-mon-giang-day/">Tin học cơ sơ</a></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Kỹ thuật lập trình</td>
-                        <td>9</td>
-                        <td>9</td>
-                        <td>9</td>
-                        <td><a href="https://fita.vnua.edu.vn/bo-mon/bm-cong-nghe-phan-mem/cac-mon-giang-day/">Kỹ thuật lập trình</a></td>
-                    </tr>
-                </tbody>
-    
-            </table>
-        </div>
-        <style>
-            #tb tr:nth-child(even){
-                background-color:grey;
-            }
-            #tb tr:nth-child(odd){
-                background-color:#fff;
-            }
-            #tb th {
-                background: rgb(68, 63, 63);
-                color: #fff;
-            }
-        </style>
-        <!-- <form action="login.php" method="POST">
-            <input type="radio" name="gt" value="Nam">Nam
-            <input type="radio" name="gt" value="Nữ">Nữ
-            <input type="button" name="" id="" value="Kích vào đây!" class="btn btn-primary">
-            <input type="submit" class="btn btn-primary">
-        </form> -->
-        <br><br>
-        <div style="border: 1px solid black;">
-            <form action="action.php" method="GET" style="margin: 30px;">
-                <h2 align="center">Thông tin liên hệ</h2>
-                <div class="form-group">
-                    <label for="">Họ tên</label>
-                    <input type="text" class="form-control txt" id="" placeholder="Họ tên" name="name" >
-                  </div>
-                  <div class="form-group">
-                    <label for="">Email</label>
-                    <input type="email" class="form-control txt" id="" placeholder="Email" name="email" >
-                  </div>
-                  <div class="form-group">
-                    <label for="">Số điện thoại</label>
-                    <input type="tel" class="form-control txt" id="" placeholder="Số điện thoại" name="phone" >
-                  </div>
-                  <div class="form-group">
-                    <!-- <label for="">Ý kiến</label> -->
-                    <textarea name="yk" id="" cols="100" rows="10" placeholder="Ý kiến" class="yk"></textarea>
-                </div>
-                <input type="submit" name="" id="" value="Submit" class="btn btn-primary">
-                <input type="reset" name="" id="" value="reset" class="btn">
-            </form>
-        </div>
+            
+            <div class="col-md-10">
+                <ul id="nav" class="navbar">
+                    <div class="left">
+                    <li><a class="active" href="./index.html"><span class="bi bi-house"></span> Trang chủ</a></li>
+                    <li><a href="./shop.html"> <span class="bi bi-calendar3"></span> Tin tức </a></li>
+                    <li><a href="./blog.html"><span class="bi bi-ticket-perforated"></span> Ưu đãi & tiện ích </a></li>
+                    <li><a href="./about.html"><span class="bi bi-question-circle"></span> Trợ giúp </a></li>
+                    </div>
+                    <div class="right">
+                        <li><a href="./about.html"><span class="bi bi-box-seam"></span> Kiểm tra đơn hàng </a></li>
+                        <li><a href="./contact.html"><span class='bi bi-emoji-wink'></span> Tài khoản</a></li>
+                        <li><a href="./contact.html"><span class="bi bi-globe2"></span> Ngôn ngữ</a></li>
+                        <!-- <li><a id="lg-bag" href="./cart.html"><span class="bi bi-cart4"></span> Giỏi hàng</a></li> -->
+                    </div>  
+                </ul> 
+                <div class="col-md-1"></div>
+            </div>
+        </section>     
+        <section class="logo_header row">
+            <div class="col-md-2">
+                <a href=""><img src="./img/logo.png" class="logo" alt=""></a>
+            </div>
 
-    <!-- </div> -->
-​
+        </section>
+
+
+
+
+
+    </div>
 </body>
 </html>
