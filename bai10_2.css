@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper{
+    background-image: url(Pictures/Background-cong-nghe.jpg);
+    background-size: cover;
+}
+
+#form-container{
+    width: 50%;
+    height: 450px;
+    border: 2px solid black;
+    position: relative;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 30px;
+}
+.ip-form-box{
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    /* height: 100%; */ 
+    display: table
+}
+.form-row{
+    display: table-row;
+    width: 100%;
+    height: 55px;
+    position: relative;
+}
+.form-cell{
+    display: table-cell;
+    
+}
+span.form-cell{
+    font-weight: bold;
+    width: 20%;
+    font-size: 20px;
+    cursor: pointer;
+}
+input.form-cell{
+    width: 80%;
+    height: 30px;
+    font-size: 16px;
+    background-color: rgb(236, 236, 236);
+    padding-left: 15px;
+    border: 1px solid rgb(83, 82, 82);
+}
+ 
+.form-btn-box{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+button{
+    background: #f80000b6;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.18);
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+i.error{
+    color: red;
+    position: absolute;
+    top: 8.5px;
+    right: 100px;
+    display: none;
+}
+
+p.error{
+    position: absolute;
+    background-color: rgb(247, 33, 33);
+    padding: 10px 2px 10px 18px;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+    top: -5px;
+    right: -140px;
+    width: 200px;
+    cursor: pointer;
+    display: none;
+}
